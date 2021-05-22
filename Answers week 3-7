@@ -1,0 +1,239 @@
+WEEK-3
+
+1.)When Python is running in the interactive mode and displaying the chevron prompt (>>>) – what question is Python asking you?
+answer-What would you like to do?
+
+2.)What will the following program print out: 
+     >>> x = 15; 
+     >>> x = x + 5;
+     >>> print x  
+answer-  20
+
+3.)Python scripts (files) have names that end with:
+answer-.py
+
+4.)Which of these words are reserved words in Python ?
+answer-if
+              break
+               
+5.)What is the proper way to say “good-bye” to Python?
+answer- quit()
+
+6.)Which of the parts of a computer actually executes the program instructions?
+answer-Central Processing Unit
+
+7.)What is “code” in the context of this course?
+answer-A sequence of instructions in a programming language
+
+8.)A USB memory stick is an example of which of the following components of computer architecture?
+answer-Secondary Memory
+
+9.)What is the best way to think about a “Syntax Error” while programming?
+answer-The computer did not understand the statement that you entered
+
+10.)Which of the following is not one of the programming patterns covered in Chapter 1?
+answer-Random steps
+
+Graded External Tool
+print("hello world")
+
+WEEK-4
+
+1.) In the following code, print 98.6. What is “98.6”?
+answer-A constant
+
+2.)In the following code, x = 42. What is “x”?
+answer-A variable
+
+3.)Which of the following variables is the “most mnemonic”?
+answer-hours
+
+4.)Which of the following is not a Python reserved word?
+answer-speed
+
+5.)Assume the variable x has been initialized to an integer value (e.g., x = 3). What does the following statement do? x = x + 2
+answer-Retrieve the current value for x, add two to it and put the sum back into x
+
+6.)Which of the following elements of a mathematical expression in Python is evaluated first?
+answer-Parenthesis()
+
+7.)What is the value of the following expression
+answer-2
+
+8.)What will be the value of x after the following statement executes: x = 1 + 2 * 3 – 8 / 4
+answer-5
+
+9.)What will be the value of x when the following statement is executed: x = int(98.6)
+answer-98
+
+10.)What does the Python raw_input() function do?
+answer-Pause the program and read data from the user
+
+Graded External Tool-1
+name = input("Enter your name")
+        print ("Hello",name)
+
+Graded External Tool-2
+name = input("Enter your name")
+        print ("Hello",name)
+WEEK-5
+
+1.)What do we do to a Python statement that is immediately after an if statement to indicate that the statement is to be executed only when the if statement is true?
+answer-Indent the line below the if statement
+
+2.)Which of these operators is not a comparison / logical operator?
+answer-=
+
+3.)What is true about the following code segment: if x == 5 : print ‘Is 5’ print ‘Is Still 5’ print ‘Third 5’
+answer-Depending on the value of x, either all three of the print statements will execute or none of the statements will execute
+
+4.)When you have multiple lines in an if block, how do you indicate the end of the if block?
+ansWER-You de-indent the next line past the if block to the same level of indent as the original if statement
+
+5.)You look at the following text: if x == 6 : print ‘Is 6’ print ‘Is Still 6’ print ‘Third 6’. It looks perfect but Python is giving you an ‘Indentation Error’ on the second print statement. What is the most likely reason?
+answer-You have mixed tabs and spaces in the file
+
+6.)What is the Python reserved word that we use in two-way if tests to indicate the block of code that is to be executed if the logical test is false?
+answer-else
+
+7.)What will the following code print out? x = 0 if x < 2 : print ‘Small’ elif x < 10 : print ‘Medium’ else : print ‘LARGE’ print ‘All done’
+answer-Small All done
+
+8.)For the following code, if x < 2: print ‘Below 2’ elif x >= 2: print ‘Two or more’ else: print ‘Something else’. What value of ‘x’ will cause ‘Something else’ to print out?
+answer-This code will never print ‘Something else’ regardless of the value for ‘x’
+
+9.)In the following code (numbers added) – which will be the last line to execute successfully? (1) astr = ‘Hello Bob’; (2) istr = int(astr); (3) print ‘First’, istr; (4) astr = ‘123’; (5) istr = int(astr); (6) print ‘Second’, istr
+answer-1
+
+10.)For the following code: astr = ‘Hello Bob’ istr = 0 try: istr = int(astr) except: istr = -1. What will the value be for istr after this code executes?
+answer--1
+Graded External Tool-1
+score = float(raw_input("Enter Score: "))
+if(score>1.0):
+    print ("out of range")   
+elif score >= 0.9:
+    print ("A")
+elif score >= 0.8:
+    print ("B")
+elif score >= 0.7:
+    print ("C")
+elif score >= 0.6:
+    print ("D")
+elif score < 0.6:
+    print ("F")
+
+Graded External Tool-2
+hrs = input("Enter Hours:")
+h = float(hrs)
+rate = float(input("Enter Rate:"))
+if h > 40 :
+    rate1 = (rate * 1.5) * (h-40)
+    
+pay = ((h-5)*rate) + rate1
+print (pay)
+
+WEEK-6
+
+1.)Which Python keyword indicates the start of a function definition?
+answer-def
+
+2.)In Python, how do you indicate the end of the block of code that makes up the function?
+answer-You de-indent a line of code to the same indent level as the def keyword
+
+3.)In Python what is the raw_input() feature best described as?
+answer-A built-in function
+
+4.)What does the following code print out? def thing(): print 'Hello'; print 'There'
+ansWER-There
+
+5.)In the following Python code, which of the following is an "argument" to a function? x = 'banana'; y = max(x); print y
+answer-x
+
+6.)What will the following Python code print out? def func(x) : print x; func(10); func(20)
+answer-10, 20
+
+7.)Which line of the following Python program is useless? def stuff(): print 'Hello' return print 'World' stuff()
+answer-print 'World'
+
+8.)What will the following Python program print out? def greet(lang): if lang == 'es': return 'Hola' elif lang == 'fr': return 'Bonjour' else: return 'Hello' print greet('fr'),'Michael'
+answer-Bonjour Michael
+
+9.)What does the following Python code print out? (Note that this is a bit of a trick question and the code has what many would consider to be a flaw/bug - so read carefully). def addtwo(a, b): added = a + b return a; x = addtwo(2, 7); print x
+answer-2
+
+10.)What is the most important benefit of writing your own functions?
+answer-Avoiding writing the same non-trivial code more than once in your program
+
+Graded External Tool
+def computepay(h,r):
+    if h>40:
+        rate1 = (r*1.5)*(h-40)
+    return ((h-5)*r)+rate1
+hrs = float(raw_input("Enter Hours:"))
+rate = float(raw_input("Enter Rate:"))
+pay = computepay(hrs,rate)
+print ("Pay",pay)
+
+WEEK-7
+
+1.)What is wrong with this Python loop: n = 5; while n > 0 : print n; print 'All done'
+answer-This loop will run forever.
+
+2.)What does the break statement do?
+answer-Exits the currently executing loop.
+
+3.)What does the continue statement do?
+answer-Jumps to the "top" of the loop and starts the next iteration.
+
+4.)What does the following Python program print out? tot = 0; for i in [5, 4, 3, 2, 1] : tot = tot + 1; print tot
+answer-5
+
+5.)What is the iteration variable in the following Python code: friends = ['Joseph', 'Glenn', 'Sally']; for friend in friends : print 'Happy New Year:', friend; print 'Done!'
+answer-friend
+
+6.)What is a good description of the following bit of Python code?; zork = 0; for thing in [9, 41, 12, 3, 74, 15] : zork = zork + thing; print 'After', zork
+answer-Sum all the elements of a list
+
+7.)What will the following code print out? smallest_so_far = -1; for the_num in [9, 41, 12, 3, 74, 15] : if the_num < smallest_so_far : smallest_so_far = the_num; print smallest_so_far
+answer--1
+
+8.)What is a good statement to describe the is operator as used in the following if statement: if smallest is None : smallest = value
+answer-matches both type and value
+
+9.)Which reserved word indicates the start of an "indefinite" loop in Python?
+answer-while
+
+10.)How many times will the body of the following loop be executed? n = 0; while n > 0 : print 'Lather' print 'Rinse'; print 'Dry off!'
+Answer-0
+
+Graded External Tool
+largest = None
+smallest = None
+while True:
+    num = raw_input("Enter a number: ")
+    if num == "done": break
+    try:
+        num = int(num)
+        if largest is None or largest < num: largest = num
+        if smallest is None or smallest > num: smallest = num
+    except:
+        print ("Invalid input")
+        continue
+print ("Maximum is",largest)
+print ("Minimum is",smallest)
+
+MADE POSSIBLE BY ADARSH BHARTI 
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
